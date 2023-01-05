@@ -1,0 +1,109 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/3111e54bba.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <!-- <img class="header__img" src="img/headerbg.jpg" /> -->
+      <div class="header-item-left">
+        <img class="item-left__img" src="img/logo-icacie.png" />
+        <img class="item-left__img" src="img/udm-logo.png" />
+      </div>
+      <div class="header-item-right">
+        <p>
+          7<sup>th</sup> International Conference on Advanced Computing and Intelligent Engineering [ICACIE 2022]
+          <br />
+          Universite des Mascareignes
+          <br />
+          <b> 23-24 December 2023 </b>
+        </p>
+      </div>
+      <!-- <div class="header-item-right"></div> -->
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar__main" id="navbar">
+      <a href="#" class="navbar__link">Home</a>
+      <a href="#" class="navbar__link">About</a>
+      <a href="#" class="navbar__link">Call for Papers</a>
+      <a href="#" class="navbar__link">Keynotes</a>
+      <a href="#" class="navbar__link">Committe</a>
+      <a href="#" class="navbar__link">Registration</a>
+      <a href="#" class="navbar__link">Venue</a>
+      <a href="#" class="navbar__link">Sponsor</a>
+      <a href="javascript:void(0);" class="navbar__icon" onclick="openNav()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <!--   -->
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="content">
+      <div class="content__side">
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
+        <div class="fakeimg" style="height: 200px">Image</div>
+        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <h3>More Text</h3>
+        <p>Lorem ipsum dolor sit ame.</p>
+        <div class="fakeimg" style="height: 60px">Image</div>
+        <br />
+        <div class="fakeimg" style="height: 60px">Image</div>
+        <br />
+        <div class="fakeimg" style="height: 60px">Image</div>
+      </div>
+      <div class="content__main">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="fakeimg" style="height: 200px">Image</div>
+        <p>Some text..</p>
+        <p>
+          Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco.
+        </p>
+        <br />
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg" style="height: 200px">Image</div>
+        <p>Some text..</p>
+        <p>
+          Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+
+    <script>
+      function openNav() {
+        var x = document.getElementById("navbar");
+        if (x.className === "navbar__main") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar__main";
+        }
+      }
+
+      function closeNav() {
+        document.getElementById("navbar").className = "navbar__main";
+      }
+    </script>
+  </body>
+</html>
