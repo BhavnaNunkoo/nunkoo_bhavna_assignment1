@@ -1,0 +1,131 @@
+/* call for Paper header */
+.paper__header {
+    display: flex;
+    background-image: url(../img/background.jpg);
+    background-size: 100%;
+    justify-content: center;
+    padding: 4%;
+}
+
+/* title */
+.paper__heading {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding-bottom: 5px;
+}
+
+/* call for paper content */
+.paper__main {
+    margin-top: 2%;
+    padding: 3%;
+}
+
+/* call for paper subtitle */
+.paper__title {
+    letter-spacing: 0.1em;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* call for paper detail */
+.paper__detail {
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    padding-left: 2%;
+    text-align: justify;
+}
+
+/* first letter- different color and size */
+.paper__detail::first-letter {
+    font-size: 200%;
+    font-weight: 600;
+    color: var(--color-primary-dark-1);
+
+}
+
+/* call for papers description */
+.paper__description {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 2%;
+}
+
+/* listing */
+.paper__list {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* unordered list style */
+.paper__list ul {
+    list-style: circle;
+    font-weight: 600;
+}
+
+/* right */
+.paper__list .item-right {
+    flex: 50%;
+}
+
+/* left list */
+.paper__list .item-left {
+    flex: 50%;
+}
+
+.paper__list-item {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    line-height: 1.7;
+    padding: 10px;
+}
+
+/* Information card */
+.paper__infocard {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0;
+
+}
+
+/* card content */
+.paper__infocard .paper__card {
+    background-color: #faecd680;
+    border-radius: 5%;
+    margin: 2%;
+    padding: 2%;
+    width: 100%;
+    height: fit-content;
+}
+
+/* card title */
+.paper__infocard .card__header {
+    font-size: 25px;
+    color: var(--color-primary-dark-1);
+    padding: 2%;
+    letter-spacing: 0.1em;
+}
+
+/* card detail */
+.paper__infocard .card__detail {
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    padding: 3%;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+@media (max-width: 700px) {
+    .paper__list {
+        flex-direction: column;
+    }
+
+    .paper__infocard {
+        flex-direction: column;
+    }
+}
