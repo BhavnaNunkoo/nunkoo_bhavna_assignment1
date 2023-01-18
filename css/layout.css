@@ -1,0 +1,32 @@
+/* Header*/
+.header {
+  background:var(--color-primary);
+  background-image: url(../img/techbg-3.jpg);
+  background-size: cover;
+  color: white;
+  display: flex;
+  padding-top:6% ;
+
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  color: #fff;
+  font-size: 17px;
+  background: var(--color-primary-light-1);
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    padding-top: 15%; 
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+}
