@@ -1,0 +1,31 @@
+:root{
+    --color-primary: rgb(0,171,189);
+    --color-primary-light-1: rgb(84,198,211);
+    --color-primary-light-2:rgb(0,183,199);
+    --color-primary-dark-1: rgb(0,88,138) ;
+    --color-primary-dark-2: rgb(0,125,190);
+    --color-grey-dark-1: rgb(35,31,32);
+    --color-grey-dark-2: rgb(99,100,102);
+    --color-grey-dark-3: rgb(167,169,172);
+
+}
+
+*,
+*::before,
+*::after
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:85%;
+}
+
+body{
+    font-family: 'Optima','Calibri','Candara','Segoe','Segoe UI',Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+}
