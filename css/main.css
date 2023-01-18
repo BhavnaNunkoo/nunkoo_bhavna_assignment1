@@ -1,0 +1,46 @@
+/* Styling for main header in all page */
+.header-item-right {
+    flex: 30%;
+    padding: 2% 2% 2% 0; 
+}
+
+/* header right item */
+.item-right__img {
+    padding: 0 4% 4% 4%;
+}
+
+.header-item-right .item-right__img {
+    width: 70%;
+}
+
+/* header left item */
+.header-item-left {
+    flex: 70%;
+    text-align: center;
+    padding: 2%;
+    font-size: 20px;
+}
+
+/* header title */
+.header .heading {
+    padding-bottom: 2%;
+}
+
+/* Responsive layout*/
+@media (max-width: 700px) {
+    .header-item-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .header-item-right .item-right__img {
+        width: 50%;
+    }
+
+    .header-item-left {
+        margin-top: 2%;
+        font-size: 15px;
+    }
+}
