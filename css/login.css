@@ -1,0 +1,135 @@
+/* login page */
+.login__main {
+  display: flex;
+  padding: 2%;
+  background-color: rgb(0, 88, 138, 0.1);
+}
+
+/* login content */
+.login__content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+/* login left content */
+.login__content .item-left {
+  flex: 50%;
+  width: 100%;
+  background-color: white;
+}
+
+/* login image */
+.login__image {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  background-color: white;
+}
+
+/* login right content */
+.login__content .item-right {
+  background-color: white;
+  width: 100%;
+  padding: 2% 5%;
+  flex: 50%;
+  flex-direction: column;
+}
+
+/* login title */
+.login__heading {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-primary-dark-1);
+}
+
+/* login subtitle */
+.login__subheading {
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  margin-bottom: 5%;
+}
+
+/* login link */
+.login__link {
+  color: var(--color-grey-dark-1);
+}
+
+/* login field */
+.login__field {
+  margin: 2% 0;
+}
+
+/* input field label */
+.login__field-label {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* icons */
+.login__icons {
+  position: absolute;
+  padding: 15px;
+  color: var(--color-grey-dark-1);
+}
+
+/* login input field */
+.login__field-input {
+  width: 80%;
+  padding: 12px 50px;
+  border: 2px solid var(--color-grey-dark-3);
+  border-radius: 4px;
+
+}
+
+/*  on focus change background color*/
+.login__field-input:focus {
+  background-color: rgb(167, 169, 172, 0.1);
+}
+
+
+/* Button */
+.login__button {
+  background-color: var(--color-primary-dark-2);
+  width: 80%;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  font-size: 17px;
+
+}
+
+/* forget password link */
+.login__password {
+  font-size: 17px;
+  width: 80%;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+/* sign up button  */
+.signup-btn {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 950px) {
+  .login__content {
+    flex-direction: column;
+  }
+
+  .login__main {
+    padding: 5%;
+  }
+
+}
