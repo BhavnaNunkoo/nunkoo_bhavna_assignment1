@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3111e54bba.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/login.css">
+  <title>Login</title>
+</head>
+
+<!-- Login Content -->
+<body class="login__main">
+  <div class="login__content">
+    <!-- Login Image -->
+    <div class="login__content item-left">
+      <img class="login__image" src="img/conference1.jpg" alt="conference-image">
+    </div>
+    <div class="login__content item-right">
+      <!-- Login Form -->
+      <p class="login__heading">
+        Welcome to Conference, <br>
+        Sign In to Continue
+      </p>
+      <p class="login__subheading">
+        Don't have an account?
+        <a href="signup.html" class="login__link">
+          <b>Create an account</b>
+        </a>
+      </p>
+      <div class="login__field">
+        <label for="email" class="login__field-label">Email</label>
+        <br>
+        <i class="login__icons fa-solid fa-envelope"></i>
+        <input type="text" id="email" name="email" class="login__field-input" placeholder="abc@gmail.com">
+      </div>
+      <div class="login__field">
+        <label for="password" class="login__field-label">Password</label>
+        <br>
+        <i class="login__icons fa-solid fa-lock"></i>
+        <input type="password" id="password" name="password" class="login__field-input" placeholder="*********">
+      </div>
+
+      <p class="login__password">Forget Password ?</p>
+
+      <!-- Login Button -->
+      <button type="button" class="login__button">
+        Sign In
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
