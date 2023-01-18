@@ -1,0 +1,142 @@
+/* speaker page background */
+.speaker__wrapper {
+    min-height: 100vh;
+    background-color: rgb(0, 183, 199, 0.1);
+    padding-bottom: 2%;
+}
+
+/*  Title */
+.speaker__title {
+    padding: 40px 0 30px 50px;
+    color: var(--color-grey-dark-1);
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.speaker__main {
+    width: 80%;
+    margin: 2% 10%;
+    background-color: white;
+    padding: 2%;
+}
+
+.speaker__content {
+    display: flex;
+    margin: 2% 5% 10% 5%;
+}
+
+/* Numbering */
+.speaker__numbering {
+    padding: 5% 5% 0 0;
+    flex: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker__line {
+    display: flex;
+    border: 1px solid var(--color-primary-dark-1);
+    width: 0.2%;
+    height: 100px;
+    margin: 50% 45% 0 45%;
+}
+
+.speaker__number {
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    color: var(--color-primary-dark-1);
+    transform: rotate(90deg);
+}
+
+/* image content */
+.speaker__image {
+    flex: 40%;
+}
+
+/* image */
+.speaker__img {
+    width: 70%;
+    height: 100%;
+
+}
+
+/* speaker detail */
+.speaker__description {
+    display: flex;
+    width: 40%;
+    flex: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* speaker name */
+.speaker__name {
+    width: 100%;
+    font-size: 30px;
+}
+
+/* speaker job */
+.speaker__job {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-grey-dark-3)
+}
+
+/* speaker biography */
+.speaker__bio {
+    letter-spacing: 0.02em;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.speaker__follow {
+    color: var(--color-primary-dark-1);
+    font-size: 17px;
+    padding-right: 10%;
+}
+
+/* icons */
+.speaker__icon {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+}
+
+/* social media */
+.speaker__social {
+    font-size: 20px;
+    padding-right: 10%
+}
+
+
+@media (max-width: 950px) {
+    .speaker__content {
+        flex-direction: column;
+    }
+
+    .speaker__img {
+        width: 100%;
+    }
+
+    .speaker__numbering {
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 5%;
+    }
+
+    .speaker__line {
+        width: 50%;
+        height: 0.2px;
+        margin: 5% 5% 0 10%;
+    }
+
+    .speaker__number {
+        transform: rotate(0deg);
+    }
+
+    .speaker__description {
+        width: 100%;
+    }
+
+}
