@@ -1,0 +1,92 @@
+/* venue page */
+.venue__main {
+    padding: 2%;
+}
+
+/* content */
+.venue__content {
+    display: flex;
+    width: 100%;
+    margin: 5% 0;
+}
+
+/* left content */
+.venue-item-left {
+    flex: 40%;
+}
+
+/* content title */
+.venue-content-title {
+    padding: 4% 2%;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+    color: var(--color-primary-dark-1);
+}
+
+/* image */
+.venue-content-img {
+    width: 100%;
+    padding: 3%;
+}
+
+/* right content */
+.venue-item-right {
+    flex: 60%;
+    padding: 3%;
+}
+
+/* venue detaill */
+.venue-content-detail {
+    padding: 2%;
+}
+
+/* subtitle */
+.venue-content-subtitle {
+    padding: 2%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* content information */
+.venue-content-info {
+    padding: 2% 4%;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.02em;
+    text-align: justify;
+}
+
+/* button */
+.btn-read-more {
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin: 4% 4%;
+    background-color: var(--color-primary-light-1);
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: width 2s;
+    float: right;
+    color: white;
+}
+
+/* on hover change background color */
+.btn-read-more:hover {
+    background-color: var(--color-primary-dark-1);
+}
+
+/* icon */
+.venue-btn-icon {
+    font-size: 17px;
+    color: white;
+    padding: 5px;
+}
+
+
+@media (max-width: 700px) {
+    .venue__content {
+        flex-direction: column;
+    }
+}
