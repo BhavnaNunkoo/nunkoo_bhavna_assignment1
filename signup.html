@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3111e54bba.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/login.css">
+  <title>Sign Up</title>
+</head>
+
+<!-- Sign Up Content -->
+<body class="login__main">
+  <div class="login__content">
+    <div class="login__content item-left">
+      <!-- Sign Up Image -->
+      <img class="login__image" src="img/conference1.jpg" alt="conference-image">
+    </div>
+    <div class="login__content item-right">
+      <!-- Sign Up Form -->
+      <p class="login__heading">
+        Welcome to Conference, <br>
+        Sign In to Continue
+      </p>
+      <p class="login__subheading">
+        Already have an account?
+        <a href="login.html" class="login__link">
+          <b>Sign In</b>
+        </a>
+      </p>
+      <div class="login__field">
+        <i class="login__icons fa-solid fa-user"></i>
+        <input type="text" id="fname" name="firstname" class="login__field-input" placeholder="Firstname">
+      </div>
+      <div class="login__field">
+        <i class="login__icons fa-solid fa-user"></i>
+        <input type="text" id="lname" name="lastname" class="login__field-input" placeholder="Lastname">
+      </div>
+      <div class="login__field">
+        <i class="login__icons fa-solid fa-envelope"></i>
+        <input type="text" id="email" name="email" class="login__field-input" placeholder="Email">
+      </div>
+      <div class="login__field">
+        <i class="login__icons fa-solid fa-lock"></i>
+        <input type="password" id="password" name="password" class="login__field-input" placeholder="Password">
+      </div>
+
+      <div class="login__field">
+        <i class="login__icons fa-solid fa-lock"></i>
+        <input type="password" id="conpassword" name="conpassword" class="login__field-input"
+          placeholder="Confirm Password">
+      </div>
+
+      <!-- Sign Up Button -->
+      <input type="button" value="Sign Up" class="login__button signup-btn">
+    </div>
+  </div>
+</body>
+
+</html>
