@@ -1,0 +1,63 @@
+/* Venue sub header image */
+.venue__header {
+    background-image: url(../img/banner.jpg);
+    background-size: 100%;
+    padding: 8%;
+}
+
+/* venue sub navbar */
+.venue__nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 0px;
+    width: 100%;
+}
+
+/* sub navbar link */
+.venue__nav-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* navbar link background */
+.venue-link-bg {
+    width: 70px;
+    height: 70px;
+}
+
+/* link detail spacing  */
+.venue-link-detail {
+    padding: 2% 3%;
+
+}
+
+/* image icon */
+.venue__icon {
+    width: 100%;
+}
+
+/* link styling */
+.venue-link {
+    padding: 3%;
+    color: black;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+
+@media (max-width: 700px) {
+    .venue-link-bg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .venue-link {
+        font-size: 13px;
+    }
+
+}
