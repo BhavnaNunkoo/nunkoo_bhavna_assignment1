@@ -1,0 +1,127 @@
+/* Style the top navigation bar */
+.navbar__main {
+    background-color: #ffffff;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+/* navigation bar icon menu bar */
+.navbar__main .navbar__icon {
+    display: none;
+    color: var(--color-primary-dark-1);
+}
+
+/* Style the navigation bar links */
+.navbar__main .navbar__link {
+    float: left;
+    color: var(--color-primary-dark-1);
+    padding: 1% 2%;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Navigation bar link log in icon */
+.navbar__main .navbar-link__icon {
+    float: right;
+}
+
+/* change color icon color on hover */
+.navbar__main .navbar__link__icon:hover {
+    color: var(--color-primary-light-1);
+}
+
+/* Change color on hover */
+.navbar__main .navbar__link:hover {
+    color: var(--color-primary-light-1);
+}
+
+/* Change color on active */
+.navbar__main .navbar__link:active {
+    background-color: var(--color-primary-light-1);
+    color: #ffffff;
+}
+
+
+/* Footer */
+.footer .footer-item-left {
+    flex: 50%;
+}
+
+.footer .footer-item-right {
+    flex: 50%;
+}
+
+/* Footer text*/
+.footer-item-right .footer__para {
+    display: block;
+    float: right;
+    font-weight: 200;
+    padding: 0 2%;
+}
+
+/* Footer  icon*/
+.footer__para .footer__icons {
+    font-weight: 200;
+    padding: 0 2%;
+}
+
+/* Responsive layout */
+@media (max-width: 950px) {
+
+    /* Flex row */
+    .navbar__main {
+        flex-direction: row;
+    }
+
+    /* Display on first child eg: Home */
+    .navbar__main .navbar__link:not(:first-child) {
+        display: none;
+    }
+
+    /* Menu Bar icon */
+    .navbar__main .navbar__icon {
+        float: right;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        padding: 1.5% 2% 1% 2%;
+        text-decoration: none;
+    }
+
+    /* navigation bar stay at the top */
+    .navbar__main.responsive {
+        position: relative;
+    }
+
+    /* Menu Bar icon stay at the top */
+    .navbar__main.responsive .navbar__icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* Navigation link */
+    .navbar__main .navbar__link {
+        float: left;
+        display: flex;
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    /* Display navigation link */
+    .navbar__main.responsive .navbar__link {
+        float: none;
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /* footer */
+    .footer-item-right .footer__para {
+        padding-top: 5%;
+        display: block;
+        float: left;
+    }
+}
