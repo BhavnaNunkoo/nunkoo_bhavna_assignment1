@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3111e54bba.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar__main" id="navbar">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="papers.html" class="navbar__link">Call for Papers</a>
+        <a href="keynote.html" class="navbar__link">Speakers</a>
+        <a href="committee.html" class="navbar__link">Committe</a>
+        <a href="registration.html" class="navbar__link">Registration</a>
+        <a href="gallery.html" class="navbar__link">Gallery</a>
+        <a href="venue.html" class="navbar__link">Venue</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+        <a href="login.html" class="navbar__link navbar-link__icon">
+            <i class="fa-regular fa-user"></i> &nbsp; Log In
+        </a>
+        <a href="javascript:void(0);" class="navbar__icon" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
+    <!-- // Navigation bar -->
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-item-left">
+            <p class="heading main__heading">
+                <b> 7<sup>th</sup> International Conference on Advanced Computing & Intelligent Engineering <br>[
+                    ICACIE
+                    2023
+                    ] </b>
+            </p>
+            <p class="heading sub__heading"> Université des Mascareignes </p>
+            <p> <b> 23 - 24 December, 2023 </b> </p>
+        </div>
+        <div class="header-item-right">
+            <img class="item-right__img image__1" src="img/logo-icacie.png" alt="icacie-logo">
+            <img class="item-right__img image__2" src="img/udm-logo.png" alt="udm-logo">
+        </div>
+    </div>
+    <!--// Header -->
+
+    <!-- Subeader -->
+    <div class="contact__header">
+        <p class="contact__title"> How can we Help? </p>
+        <p class="contact__subtitle "> <strong> Want more information about the conference? </strong>
+            Drop us a note here and our friendly team will get back to you shortly!</p>
+    </div>
+    <!-- // Subeader -->
+
+    <div class="contact__content">
+        <div class="contact__item-left">
+            <!-- Contact Gif -->
+            <img class="contact__image" src="img/contact-us.gif" alt="contact">
+        </div>
+        <div class="contact__item-right">
+            <!-- Contact Form -->
+            <div class="contact__form-title"> <b> CONTACT US </b> </div>
+            <div class="contact__form">
+                <input type="text" id="firstname" name="fname" class="contact__field contact__detail"
+                    placeholder="First Name">
+                <input type="text" id="lastname" name="lname" class="contact__field contact__detail"
+                    placeholder="Last Name">
+            </div>
+            <div class="contact__form">
+                <input type="text" id="email" name="email" class="contact__field contact__detail" placeholder="Email">
+                <input type="text" id="number" name="number" class="contact__field contact__detail"
+                    placeholder="Number">
+            </div>
+
+            <div class="contact__messg">
+                <textarea rows="5" cols="50" placeholder="Message" class="contact__field msg__detail"></textarea>
+            </div>
+
+            <div class="contact__button">
+                <button type="button" class="message__button">
+                    SEND MESSAGE
+                    <i class="contact__icon fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-item-left">
+            <p class="footer__para">
+                <i class="footer__icons fa-brands fa-facebook-f"></i>
+                <i class="footer__icons fa-brands fa-youtube"></i>
+                <i class="footer__icons fa-brands fa-instagram"></i>
+                <i class="footer__icons fa-brands fa-linkedin-in"></i>
+                <i class="footer__icons fa-brands fa-twitter"></i>
+            </p>
+        </div>
+        <div class="footer-item-right">
+            <p class="footer__para">© 2023. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Navigation bar menu icon -->
+    <script>
+        function openNav() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar__main") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar__main";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
