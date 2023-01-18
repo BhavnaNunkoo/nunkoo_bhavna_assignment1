@@ -1,109 +1,225 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/3111e54bba.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="img/logo.png" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/component.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <div class="header">
-      <!-- <img class="header__img" src="img/headerbg.jpg" /> -->
-      <div class="header-item-left">
-        <img class="item-left__img" src="img/logo-icacie.png" />
-        <img class="item-left__img" src="img/udm-logo.png" />
-      </div>
-      <div class="header-item-right">
-        <p>
-          7<sup>th</sup> International Conference on Advanced Computing and Intelligent Engineering [ICACIE 2022]
-          <br />
-          Universite des Mascareignes
-          <br />
-          <b> 23-24 December 2023 </b>
-        </p>
-      </div>
-      <!-- <div class="header-item-right"></div> -->
-    </div>
 
-    <!-- Navigation Bar -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3111e54bba.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/component.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="home__wrapper">
+    <!-- Navigation bar -->
     <div class="navbar__main" id="navbar">
-      <a href="#" class="navbar__link">Home</a>
-      <a href="#" class="navbar__link">About</a>
-      <a href="#" class="navbar__link">Call for Papers</a>
-      <a href="#" class="navbar__link">Keynotes</a>
-      <a href="#" class="navbar__link">Committe</a>
-      <a href="#" class="navbar__link">Registration</a>
-      <a href="#" class="navbar__link">Venue</a>
-      <a href="#" class="navbar__link">Sponsor</a>
+      <a href="index.html" class="navbar__link">Home</a>
+      <a href="papers.html" class="navbar__link">Call for Papers</a>
+      <a href="keynote.html" class="navbar__link">Speakers</a>
+      <a href="committee.html" class="navbar__link">Committe</a>
+      <a href="registration.html" class="navbar__link">Registration</a>
+      <a href="gallery.html" class="navbar__link">Gallery</a>
+      <a href="venue.html" class="navbar__link">Venue</a>
+      <a href="contact.html" class="navbar__link">Contact</a>
+      <a href="login.html" class="navbar__link navbar-link__icon"> <i class="fa-regular fa-user"></i> &nbsp; Log In </a>
       <a href="javascript:void(0);" class="navbar__icon" onclick="openNav()">
         <i class="fa-solid fa-bars"></i>
       </a>
-      <!--   -->
     </div>
+    <!-- // Navigation bar -->
 
-    <!-- The flexible grid (content) -->
+    <!-- Header -->
+    <div class="header">
+      <div class="header-item-left">
+        <p class="heading main__heading">
+          <b> 7<sup>th</sup> International Conference on Advanced Computing & Intelligent Engineering <br>[ ICACIE
+            2023 ] </b>
+        </p>
+        <p class="heading sub__heading">Université des Mascareignes</p>
+        <p><b> 23 - 24 December, 2023 </b></p>
+      </div>
+      <div class="header-item-right">
+        <img class="item-right__img image__1" src="img/logo-icacie.png" alt="icacie-logo">
+        <img class="item-right__img image__2" src="img/udm-logo.png" alt="udm-logo">
+      </div>
+    </div>
+    <!--// Header -->
+
     <div class="content">
-      <div class="content__side">
-        <h2>About Me</h2>
-        <h5>Photo of me:</h5>
-        <div class="fakeimg" style="height: 200px">Image</div>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        <h3>More Text</h3>
-        <p>Lorem ipsum dolor sit ame.</p>
-        <div class="fakeimg" style="height: 60px">Image</div>
-        <br />
-        <div class="fakeimg" style="height: 60px">Image</div>
-        <br />
-        <div class="fakeimg" style="height: 60px">Image</div>
-      </div>
       <div class="content__main">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <div class="fakeimg" style="height: 200px">Image</div>
-        <p>Some text..</p>
-        <p>
-          Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco.
-        </p>
-        <br />
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height: 200px">Image</div>
-        <p>Some text..</p>
-        <p>
-          Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco.
-        </p>
+
+        <!-- Statistic Number of speaker... -->
+        <div class="member-statistic">
+          <div class="statistic">
+            <div class="statistic_number">04</div>
+            <div class="statistic_title">Speakers</div>
+          </div>
+
+          <div class="statistic">
+            <div class="statistic_number">22</div>
+            <div class="statistic_title">Members</div>
+          </div>
+
+          <div class="statistic">
+            <div class="statistic_number">16</div>
+            <div class="statistic_title">Sessions</div>
+          </div>
+
+          <div class="statistic">
+            <div class="statistic_number">100</div>
+            <div class="statistic_title">Participants</div>
+          </div>
+        </div>
+        
+        <div class="content-about">
+          <!-- About Conference -->
+          <h1 class="about-content-title">ABOUT CONFERENCE</h1>
+          <div class="about-description">
+            ICACIE 2022 focuses on both theory and applications in the broad areas of advanced computing and intelligent
+            engineering. ICACIE is a multidisciplinary conference organized with the
+            objective of bringing together academicians, scientists, researchers from industry, research scholars, and
+            students working in all areas of advanced computing and intelligent
+            engineering. The conference will provide the authors and listeners with opportunities for national and
+            international collaboration and networking among universities and institutions from
+            India and abroad for promoting research and developing technologies. The aim of this conference is to
+            promote the translation of basic research into applied investigation and convert
+            applied investigation into the practice. This conference will also create awareness about the importance of
+            basic scientific research in different fields matching the current trends. The
+            conference will provide the flavor of keynote lectures by eminent speakers from different areas & panel
+            discussions by industry people. The scope of the conference includes all areas of
+            Advanced Computing and Intelligent Engineering.
+          </div>
+        </div>
+
+        <!-- Information Card -->
+        <div class="home__infocard">
+          <div class="home__card">
+            <!-- Host by  -->
+            <p class="home-card-title"> HOST BY </p>
+            <div class="sponsor-image">
+              <img src="img/mainLogo.png" alt="university-logo" class="sponsor-img">
+            </div>
+          </div>
+
+          <div class="home__card">
+            <!-- Latest News -->
+            <p class="home-card-title"> LATEST NEWS </p>
+            <p class="home-card-text"> Payment deadline extended to 31 August 2022! <br><br>
+              The deadline for paper submission is extended to 30th September 2022
+            </p>
+          </div>
+
+          <div class="home__card">
+            <!-- Important Dates  -->
+            <p class="home-card-title"> IMPORTANT DATES</p>
+            <p class="home-card-text"> Abstract or full paper submission: 30 June 2022 <br><br>
+              Acceptance notification: 30 July 2022<br><br>
+              Final paper submission: 10 August 2022
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Speakers  -->
+        <div class="home-speaker">
+          <h1 class="speaker-content-title">Our Speakers</h1>
+
+          <div class="speaker-content">
+            <!-- Speakers Image and Name  -->
+            <div class="speaker-content-card">
+              <div class="speaker-content-image">
+                <img src="img/speaker1.jpg" alt="speaker1" class="speaker-img">
+              </div>
+              <div class="speaker-content-name">Jane Brown</div>
+            </div>
+            <div class="speaker-content-card">
+              <div class="speaker-content-image">
+                <img src="img/speaker2.jpg" alt="speaker2" class="speaker-img">
+              </div>
+              <div class="speaker-content-name">Britney Samcold</div>
+            </div>
+            <div class="speaker-content-card">
+              <div class="speaker-content-image">
+                <img src="img/speaker3.jpg" alt="speaker3" class="speaker-img">
+              </div>
+              <div class="speaker-content-name">Simon Conwell</div>
+            </div>
+            <div class="speaker-content-card">
+              <div class="speaker-content-image">
+                <img src="img/speaker4.jpg" alt="speaker4" class="speaker-img">
+              </div>
+              <div class="speaker-content-name">Matthew Tiger</div>
+            </div>
+          </div>
+          <!-- View All Speakers button -->
+          <div class="speaker-btn">
+            <button type="button" class="view-all-btn">
+              View All
+              <i class="venue-btn-icon fa-solid fa-angles-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sponsors  -->
+        <div class="sponsor-content">
+          <h1 class="about-content-title">Our Sponsors</h1>
+          <div class="sponsor-listing">
+            <div class="sponsor-image">
+              <img src="img/star.jpg" alt="sponsor-1" class="sponsor-img">
+            </div>
+            <div class="sponsor-image">
+              <img src="img/emerald.png" alt="sponsor-2" class="sponsor-img">
+            </div>
+            <div class="sponsor-image">
+              <img src="img/rogers.jpg" alt="sponsor-3" class="sponsor-img">
+            </div>
+            <div class="sponsor-image">
+              <img src="img/ROGERS_CAPITAL_LOGO.png" alt="sponsor-3" class="sponsor-img">
+            </div>
+            <div class="sponsor-image">
+              <img src="img/Logo-Accenture.png" alt="sponsor-3" class="sponsor-img">
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </div>
+  </div>
 
-    <!-- Footer -->
-    <div class="footer">
-      <h2>Footer</h2>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-item-left">
+      <p class="footer__para">
+        <i class="footer__icons fa-brands fa-facebook-f"></i>
+        <i class="footer__icons fa-brands fa-youtube"></i>
+        <i class="footer__icons fa-brands fa-instagram"></i>
+        <i class="footer__icons fa-brands fa-linkedin-in"></i>
+        <i class="footer__icons fa-brands fa-twitter"></i>
+      </p>
     </div>
+    <div class="footer-item-right">
+      <p class="footer__para">© 2023. All rights reserved.</p>
+    </div>
+  </div>
 
-    <script>
-      function openNav() {
-        var x = document.getElementById("navbar");
-        if (x.className === "navbar__main") {
-          x.className += " responsive";
-        } else {
-          x.className = "navbar__main";
-        }
+  <!-- Navigation bar menu icon -->
+  <script>
+    function openNav() {
+      var x = document.getElementById("navbar");
+      if (x.className === "navbar__main") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar__main";
       }
+    }
+  </script>
+</body>
 
-      function closeNav() {
-        document.getElementById("navbar").className = "navbar__main";
-      }
-    </script>
-  </body>
 </html>
